@@ -1,7 +1,9 @@
+import React from "react"
 import styled from "styled-components"
-import cta from "../../images/cta.png"
 
-export const Container = styled.section`
+import cta from "../images/cta.png"
+
+const Container = styled.section`
   display: flex;
   height: 400px;
   background: #fff;
@@ -12,7 +14,7 @@ export const Container = styled.section`
   }
 `
 
-export const Card = styled.div`
+const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +42,7 @@ export const Card = styled.div`
   }
 `
 
-export const Wraper = styled.div`
+const Wraper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +56,7 @@ export const Wraper = styled.div`
   }
 `
 
-export const GetStartedButton = styled.button`
+const GetStartedButton = styled.button`
   width: 150px;
   height: 40px;
   background: #3ecf0e;
@@ -66,7 +68,7 @@ export const GetStartedButton = styled.button`
   border: 0px;
 `
 
-export const ImgBg = styled.div`
+const ImgBg = styled.div`
   background-image: url(${cta});
   width: 50%;
 
@@ -76,3 +78,20 @@ export const ImgBg = styled.div`
     background-position: 35%;
   }
 `
+
+function GetStarted() {
+  return (
+    <Container>
+      <Wraper>
+        <Card>
+          <h2>Gostou?</h2>
+          <p>Fazer seu cadastro na Juno é grátis e não leva nem 5 minutos.</p>
+          <GetStartedButton>Comece Agora</GetStartedButton>
+        </Card>
+      </Wraper>
+      <ImgBg />
+    </Container>
+  )
+}
+
+export default GetStarted

@@ -1,6 +1,8 @@
+import React from "react"
+
 import styled from "styled-components"
 
-export const Container = styled.footer`
+const Container = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,3 +31,18 @@ export const Container = styled.footer`
     padding: 50px 0;
   }
 `
+
+function Footer() {
+  return (
+    <Container>
+      <p>Juno.com.br</p>
+      <p id="policy">
+        2020 Juno. Todos os direitos reservados.
+        <br /> Juno é uma plataforma de BoletoBancário.com
+      </p>
+      <p>#tamojuno</p>
+    </Container>
+  )
+}
+
+export default Footer

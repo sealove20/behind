@@ -1,6 +1,7 @@
+import React from "react"
 import styled from "styled-components"
 
-export const Container = styled.section`
+const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +29,7 @@ export const Container = styled.section`
   }
 `
 
-export const Wraper = styled.div`
+const Wraper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 22%;
@@ -41,7 +42,7 @@ export const Wraper = styled.div`
   }
 `
 
-export const Panel = styled.div`
+const Panel = styled.div`
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -56,7 +57,7 @@ export const Panel = styled.div`
   }
 `
 
-export const Title = styled.div`
+const Title = styled.div`
   font-weight: 900;
   font-family: Roboto;
   font-size: 24px;
@@ -64,7 +65,7 @@ export const Title = styled.div`
   margin-right: 10px;
 `
 
-export const Text = styled.p`
+const Text = styled.p`
   width: 279px;
   word-wrap: break-word;
   font-family: Roboto;
@@ -75,3 +76,38 @@ export const Text = styled.p`
   text-align: left;
   color: #666;
 `
+
+function About() {
+  return (
+    <Container>
+      <h2>Como a Juno funciona?</h2>
+      <Wraper>
+        <Panel>
+          <Title>1.</Title>
+          <Text>
+            Você se cadastra na Juno, emite cobranças e envia para seus
+            clientes. É rápido e não precisa ter carteira de cobrança em nenhum
+            banco.
+          </Text>
+        </Panel>
+        <Panel>
+          <Title>2.</Title>
+          <Text>
+            Seu cliente recebe a cobrança da maneira que você preferir e paga. A
+            Juno cuida da conciliação bancária e da segurança das suas
+            transações.
+          </Text>
+        </Panel>
+        <Panel>
+          <Title>3.</Title>
+          <Text>
+            O dinheiro cai na sua conta Juno e você pode usá-lo com seu cartão
+            Juno, pagar contas ou transferir para uma conta bancária.
+          </Text>
+        </Panel>
+      </Wraper>
+    </Container>
+  )
+}
+
+export default About

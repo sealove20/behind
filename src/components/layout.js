@@ -4,9 +4,9 @@ import GlobalStyle from "../styles/global"
 
 import Header from "./Header"
 import Main from "./Main"
-import Section1 from "./Section1"
-import Section2 from "./Section2"
-import Section3 from "./Section3"
+import About from "./About"
+import WorkWith from "./WorkWith"
+import GetStarted from "./GetStarted"
 import Footer from "./Footer"
 
 function Layout() {
@@ -15,9 +15,9 @@ function Layout() {
       <GlobalStyle />
       <Header />
       <Main />
-      <Section1 />
-      <Section2 />
-      <Section3 />
+      <About />
+      <WorkWith />
+      <GetStarted />
       <Footer />
     </>
   )

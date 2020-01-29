@@ -1,6 +1,9 @@
+import React from "react"
 import styled from "styled-components"
 
-export const Container = styled.section`
+import cobrancas from "../images/cobrancas-recorrentes.png"
+
+const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +22,7 @@ export const Container = styled.section`
     }
   }
 `
-export const Wraper = styled.div`
+const Wraper = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 13%;
@@ -31,6 +34,7 @@ export const Wraper = styled.div`
     word-wrap: break-word;
     color: ${props => props.theme.primary};
     width: 350px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -57,3 +61,21 @@ export const Wraper = styled.div`
     }
   }
 `
+
+function WorkWith() {
+  return (
+    <Container>
+      <Wraper>
+        <h2>Emita cobranças recorrentes</h2>
+        <p>
+          Com a Juno, você pode emitir cobranças recorrentes com lembretes que
+          ajudam a diminuir a inadimplência dos seus clientes.
+        </p>
+      </Wraper>
+
+      <img src={cobrancas} alt="cobranças" />
+    </Container>
+  )
+}
+
+export default WorkWith

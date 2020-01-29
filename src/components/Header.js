@@ -1,13 +1,17 @@
+import React from "react"
+
 import styled from "styled-components"
 
-export const Container = styled.header`
+import logo from "../images/juno.svg"
+
+const Container = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 63px;
   background: ${props => props.theme.primary};
 `
-export const GetStartedButton = styled.button`
+const GetStartedButton = styled.button`
   width: 150px;
   height: 40px;
   background: #3ecf0e;
@@ -18,3 +22,14 @@ export const GetStartedButton = styled.button`
   border-radius: 4px;
   border: 0px;
 `
+
+function Header() {
+  return (
+    <Container>
+      <img src={logo} alt="Logo" />
+      <GetStartedButton>Comece Agora</GetStartedButton>
+    </Container>
+  )
+}
+
+export default Header

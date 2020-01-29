@@ -1,4 +1,4 @@
 export default {
   backgroud: "#fff",
-  primary: "#252AFF;",
+  primary: "#252AFF",
 }

@@ -1,7 +1,9 @@
+import React from "react"
 import styled from "styled-components"
-import backgroundImage from "../../images/banner-bg.png"
 
-export const Container = styled.main`
+import backgroundImage from "../images/banner-bg.png"
+
+const Container = styled.main`
   display: flex;
   align-items: center;
   background-image: url(${backgroundImage});
@@ -12,7 +14,7 @@ export const Container = styled.main`
   }
 `
 
-export const Card = styled.div`
+const Card = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 22%;
@@ -53,7 +55,7 @@ export const Card = styled.div`
   }
 `
 
-export const GetStartedButton = styled.button`
+const GetStartedButton = styled.button`
   width: 150px;
   height: 40px;
   background: #3ecf0e;
@@ -64,3 +66,20 @@ export const GetStartedButton = styled.button`
   border-radius: 4px;
   border: 0px;
 `
+
+function Main() {
+  return (
+    <Container>
+      <Card>
+        <h1>Profissionalize seu negócio recebendo pagamentos por boleto</h1>
+        <p>
+          Na Juno você não precisa ter conta jurídica e nem carteira de cobrança
+          junto ao banco para emitir boletos. Basta seu CPF. Simples assim!
+        </p>
+        <GetStartedButton>Comece Agora</GetStartedButton>
+      </Card>
+    </Container>
+  )
+}
+
+export default Main
