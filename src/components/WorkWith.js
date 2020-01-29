@@ -8,8 +8,8 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: ${props => props.theme.background};
   padding: 50px 0;
+  background: ${props => props.theme.background};
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -31,9 +31,9 @@ const Wraper = styled.div`
     font-weight: bold;
     font-size: 32px;
     word-wrap: break-word;
-    color: ${props => props.theme.primary};
-    width: 350px;
     margin-bottom: 20px;
+    width: 350px;
+    color: ${props => props.theme.primary};
   }
 
   p {
@@ -41,8 +41,8 @@ const Wraper = styled.div`
     line-height: 25px;
     letter-spacing: 0.4px;
     word-wrap: break-word;
-    color: ${props => props.theme.primaryFontColor};
     width: 317px;
+    color: ${props => props.theme.primaryFontColor};
   }
 
   @media only screen and (max-width: 600px) {

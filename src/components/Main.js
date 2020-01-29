@@ -32,7 +32,7 @@ const Card = styled.div`
   p {
     margin: 20px 0;
     font-size: 18px;
-    line-height: 140%;
+    line-height: 25px;
     word-wrap: break-word;
     width: 523px;
     color: ${props => props.theme.secondaryFontColor};
@@ -40,6 +40,7 @@ const Card = styled.div`
 
   @media only screen and (max-width: 600px) {
     margin-left: 15px;
+
     h1 {
       width: 311px;
       font-size: 40px;

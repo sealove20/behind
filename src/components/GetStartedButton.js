@@ -9,7 +9,7 @@ const Container = styled.a`
   width: 150px;
   height: 40px;
   background: ${props => props.theme.buttonColor};
-  color: #fff;
+  color: ${props => props.theme.secondaryFontColor};
   font-size: 16px;
   font-weight: bold;
   border-radius: 4px;

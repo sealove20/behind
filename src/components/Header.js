@@ -16,7 +16,7 @@ const Container = styled.header`
 function Header() {
   return (
     <Container>
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Bussines Logo" />
       <GetStartedButton />
     </Container>
   )
