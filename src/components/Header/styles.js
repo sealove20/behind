@@ -8,7 +8,6 @@ export const Container = styled.header`
   height: 63px;
   background: #252aff;
 `
-
 export const GetStartedButton = styled.button`
   width: 150px;
   height: 40px;
@@ -20,3 +19,4 @@ export const GetStartedButton = styled.button`
   border-radius: 4px;
   border: 0px;
 `
+
