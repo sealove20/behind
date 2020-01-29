@@ -6,14 +6,13 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   height: 400px;
-  background: #f1f5fb;
+  background: ${props => props.theme.backgroundColorAbout};
 
   h2 {
-    font-family: Roboto;
     font-weight: bold;
     font-size: 32px;
     line-height: 32px;
-    color: #666;
+    color: ${props => props.theme.fontColor};
     width: 280px;
     margin-bottom: 40px;
     margin-left: 22%;
@@ -59,22 +58,20 @@ const Panel = styled.div`
 
 const Title = styled.div`
   font-weight: 900;
-  font-family: Roboto;
   font-size: 24px;
-  color: #fc8b24;
+  color: ${props => props.theme.secondary};
   margin-right: 10px;
 `
 
 const Text = styled.p`
   width: 279px;
   word-wrap: break-word;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.4px;
   line-height: 25px;
   text-align: left;
-  color: #666;
+  color: ${props => props.theme.fontColor};
 `
 
 function About() {

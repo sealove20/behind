@@ -10,11 +10,10 @@ const Container = styled.footer`
   background: ${props => props.theme.primary};
 
   p {
-    font-family: Roboto;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
+    color: ${props => props.theme.footerFontColor};
   }
 
   #policy {

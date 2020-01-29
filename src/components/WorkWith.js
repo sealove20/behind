@@ -8,8 +8,8 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: #fff;
-  margin-top: 50px;
+  background: ${props => props.theme.background};
+  padding: 50px 0;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -28,7 +28,6 @@ const Wraper = styled.div`
   margin-left: 13%;
 
   h2 {
-    font-family: Roboto;
     font-weight: bold;
     font-size: 32px;
     word-wrap: break-word;
@@ -38,12 +37,11 @@ const Wraper = styled.div`
   }
 
   p {
-    font-family: Roboto;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.4px;
     word-wrap: break-word;
-    color: #666;
+    color: ${props => props.theme.fontColor};
     width: 317px;
   }
 
