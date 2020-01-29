@@ -7,6 +7,17 @@ export const Container = styled.section`
   height: 400px;
   background: #fff;
   margin-top: 50px;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 40px;
+
+    img {
+      width: 80%;
+      order: 1;
+    }
+  }
 `
 export const Wraper = styled.div`
   display: flex;
@@ -19,7 +30,7 @@ export const Wraper = styled.div`
     font-size: 32px;
     word-wrap: break-word;
     color: ${props => props.theme.primary};
-    width: 377px;
+    width: 350px;
   }
 
   p {
@@ -30,5 +41,19 @@ export const Wraper = styled.div`
     word-wrap: break-word;
     color: #666;
     width: 317px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    order: 2;
+    margin-left: 0;
+
+    h2 {
+      width: 295px;
+      margin: 0;
+    }
+
+    p {
+      width: 280px;
+    }
   }
 `

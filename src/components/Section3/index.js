@@ -1,8 +1,6 @@
 import React from "react"
 
-import { Container, Card, GetStartedButton, Wraper } from "./styles"
-
-import cta from "../../images/cta.png"
+import { Container, Card, GetStartedButton, Wraper, ImgBg } from "./styles"
 
 function Section3() {
   return (
@@ -14,7 +12,7 @@ function Section3() {
           <GetStartedButton>Comece Agora</GetStartedButton>
         </Card>
       </Wraper>
-      <img src={cta} alt="cta" style={{ width: "50%" }} />
+      <ImgBg />
     </Container>
   )
 }

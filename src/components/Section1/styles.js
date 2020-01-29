@@ -14,13 +14,31 @@ export const Container = styled.section`
     line-height: 32px;
     color: #666;
     width: 280px;
+    margin-bottom: 40px;
     margin-left: 22%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    padding: 45px 0;
+
+    h2 {
+      margin-left: 5%;
+    }
   }
 `
 
 export const Wraper = styled.div`
   display: flex;
+  align-items: center;
   margin-left: 22%;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px;
+  }
 `
 
 export const Panel = styled.div`
@@ -29,6 +47,12 @@ export const Panel = styled.div`
   align-items: baseline;
   &:nth-of-type(n + 2) {
     margin-left: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    &:nth-of-type(n + 2) {
+      margin-left: 0px;
+    }
   }
 `
 

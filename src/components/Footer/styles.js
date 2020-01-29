@@ -20,5 +20,12 @@ export const Container = styled.footer`
     font-size: 14px;
     word-wrap: break-word;
     width: 300px;
+    margin: 20px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0;
   }
 `

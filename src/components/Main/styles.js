@@ -8,7 +8,7 @@ export const Container = styled.main`
   height: 537px;
 
   @media only screen and (max-width: 600px) {
-    background-position: 75%;
+    background-position: 70%;
   }
 `
 
@@ -18,20 +18,38 @@ export const Card = styled.div`
   margin-left: 22%;
 
   h1 {
-    color: #fff;
-    word-wrap: break-word;
-    width: 476px;
     font-family: Roboto;
     font-size: 44px;
     line-height: 48px;
+    word-wrap: break-word;
+    width: 476px;
+    color: #fff;
   }
 
   p {
-    color: #fff;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: Roboto;
+    line-height: 140%;
     word-wrap: break-word;
     width: 523px;
-    font-size: 18px;
-    line-height: 140%;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 15px;
+    /* align-items: flex-start; */
+    h1 {
+      width: 311px;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 0;
+    }
+
+    p {
+      width: 311px;
+      text-align: left;
+    }
   }
 `
 

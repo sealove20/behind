@@ -1,9 +1,15 @@
 import styled from "styled-components"
+import cta from "../../images/cta.png"
 
 export const Container = styled.section`
   display: flex;
   height: 400px;
   background: #fff;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+  }
 `
 
 export const Card = styled.div`
@@ -23,6 +29,7 @@ export const Card = styled.div`
   }
 
   p {
+    margin: 20px 0;
     font-family: Roboto;
     font-size: 18px;
     word-wrap: break-word;
@@ -40,6 +47,11 @@ export const Wraper = styled.div`
   height: 100%;
   width: 50%;
   background: #00155f;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 330px;
+  }
 `
 
 export const GetStartedButton = styled.button`
@@ -52,4 +64,15 @@ export const GetStartedButton = styled.button`
   font-weight: bold;
   border-radius: 4px;
   border: 0px;
+`
+
+export const ImgBg = styled.div`
+  background-image: url(${cta});
+  width: 50%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 390px;
+    background-position: 35%;
+  }
 `
