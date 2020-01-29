@@ -26,7 +26,7 @@ const Card = styled.div`
     line-height: 48px;
     word-wrap: break-word;
     width: 476px;
-    color: #fff;
+    color: ${props => props.theme.secondaryFontColor};
   }
 
   p {
@@ -35,7 +35,7 @@ const Card = styled.div`
     line-height: 140%;
     word-wrap: break-word;
     width: 523px;
-    color: #fff;
+    color: ${props => props.theme.secondaryFontColor};
   }
 
   @media only screen and (max-width: 600px) {

@@ -12,7 +12,7 @@ const Container = styled.section`
     font-weight: bold;
     font-size: 32px;
     line-height: 32px;
-    color: ${props => props.theme.fontColor};
+    color: ${props => props.theme.primaryFontColor};
     width: 280px;
     margin-bottom: 40px;
     margin-left: 22%;
@@ -71,7 +71,7 @@ const Text = styled.p`
   letter-spacing: 0.4px;
   line-height: 25px;
   text-align: left;
-  color: ${props => props.theme.fontColor};
+  color: ${props => props.theme.primaryFontColor};
 `
 
 function About() {

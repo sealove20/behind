@@ -1,7 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-const Container = styled.button`
+const Container = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 150px;
   height: 40px;
   background: ${props => props.theme.buttonColor};
@@ -17,7 +21,14 @@ const Container = styled.button`
 `
 
 function GetStartedButton() {
-  return <Container>Comece Agora</Container>
+  return (
+    <Container
+      href="https://matheushenrique484953.typeform.com/to/vAkglf"
+      target="_blank"
+    >
+      Comece Agora
+    </Container>
+  )
 }
 
 export default GetStartedButton

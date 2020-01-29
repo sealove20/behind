@@ -41,7 +41,7 @@ const Wraper = styled.div`
     line-height: 25px;
     letter-spacing: 0.4px;
     word-wrap: break-word;
-    color: ${props => props.theme.fontColor};
+    color: ${props => props.theme.primaryFontColor};
     width: 317px;
   }
 

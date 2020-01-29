@@ -13,7 +13,7 @@ const Container = styled.footer`
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: ${props => props.theme.footerFontColor};
+    color: ${props => props.theme.secondaryFontColor};
   }
 
   #policy {
