@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import cta from "../images/cta.png"
+import cta from "../images/cta.webp"
 
 import GetStartedButton from "./GetStartedButton"
 

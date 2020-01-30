@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-import backgroundImage from "../images/banner-bg.png"
+import backgroundImage from "../images/banner-bg.webp"
 
 import GetStartedButton from "./GetStartedButton"
 
