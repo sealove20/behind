@@ -20,7 +20,7 @@ const Container = styled.section`
     color: ${props => props.theme.primaryFontColor};
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1400px) {
     padding: 45px 0;
     height: auto;
     align-items: center;
@@ -45,7 +45,7 @@ const Wraper = styled.div`
   align-items: center;
   margin-left: 22%;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1400px) {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;

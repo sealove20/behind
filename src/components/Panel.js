@@ -10,7 +10,7 @@ const Container = styled.div`
     margin-left: 100px;
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1400px) {
     &:nth-of-type(n + 2) {
       margin-left: 0px;
     }
