@@ -19,7 +19,7 @@
 
 ## 💻 Projeto
 
-A Behind é um projeto que visa conectar as pessoas e os seus sapatos 
+A Behind é um projeto que visa conectar as pessoas e os seus sapatos.
 
 ## ⌨️ Instalando
 
@@ -62,6 +62,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
