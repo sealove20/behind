@@ -1,6 +1,6 @@
 export default {
   background: "#fff",
-  primary: "tomato",
+  primary: "rgba(255,99,71, 0.9)",
   secondary: "#fc8b24",
   primaryFontColor: "#666",
   secondaryFontColor: "#fff",
