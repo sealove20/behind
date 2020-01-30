@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import logo from "../images/juno.svg"
+import logo from "../images/behindLogo.png"
 
 import GetStartedButton from "./GetStartedButton"
 
@@ -11,6 +11,11 @@ const Container = styled.header`
   align-items: center;
   height: 63px;
   background: ${props => props.theme.primary};
+
+  img {
+    width: 88px;
+    height: 45px;
+  }
 `
 
 function Header() {

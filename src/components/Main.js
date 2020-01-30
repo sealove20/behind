@@ -59,10 +59,10 @@ function Main() {
   return (
     <Container>
       <Card>
-        <h1>Profissionalize seu negócio recebendo pagamentos por boleto</h1>
+        <h1>A segurança de sempre encontrar o seu sapato pelo celular</h1>
         <p>
-          Na Juno você não precisa ter conta jurídica e nem carteira de cobrança
-          junto ao banco para emitir boletos. Basta seu CPF. Simples assim!
+          Na Behind você não precisa ter medo de deixar seus sapatos em qualquer
+          lugar. Bastam suas ondas cognitivas. Simples assim!
         </p>
         <GetStartedButton />
       </Card>

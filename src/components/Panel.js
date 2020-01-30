@@ -10,6 +10,13 @@ const Container = styled.div`
     margin-left: 100px;
   }
 
+  @media only screen and (max-width: 1200px) {
+    &:nth-of-type(n + 2) {
+      margin-left: 0px;
+    }
+    margin: 20px 0;
+  }
+
   @media only screen and (max-width: 600px) {
     &:nth-of-type(n + 2) {
       margin-left: 0px;
@@ -21,7 +28,7 @@ const Title = styled.p`
   font-weight: 900;
   font-size: 24px;
   margin-right: 10px;
-  color: ${props => props.theme.secondary};
+  color: #34a73f;
 `
 
 const Text = styled.p`

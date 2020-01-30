@@ -6,6 +6,7 @@ const Container = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  box-shadow: 3px 3px 15px 2px #666;
   width: 150px;
   height: 40px;
   background: ${props => props.theme.buttonColor};
@@ -16,7 +17,7 @@ const Container = styled.a`
   border: 0px;
 
   &:hover {
-    background: #7ecf0e;
+    background: #0061b1;
   }
 `
 

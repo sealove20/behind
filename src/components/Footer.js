@@ -34,12 +34,12 @@ const Container = styled.footer`
 function Footer() {
   return (
     <Container>
-      <p>Juno.com.br</p>
+      <p>behind.com.br</p>
       <p id="policy">
-        2020 Juno. Todos os direitos reservados.
-        <br /> Juno é uma plataforma de BoletoBancário.com
+        2020 Behind. Todos os direitos reservados.
+        <br /> Behind é uma aplicativo de sapatos perdidos
       </p>
-      <p>#tamojuno</p>
+      <p>#dalebehind</p>
     </Container>
   )
 }

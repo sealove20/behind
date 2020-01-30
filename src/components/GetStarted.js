@@ -72,7 +72,7 @@ function GetStarted() {
       <Wraper>
         <Card>
           <h2>Gostou?</h2>
-          <p>Fazer seu cadastro na Juno é grátis e não leva nem 5 minutos.</p>
+          <p>Fazer seu cadastro na Behind é grátis e não leva nem 5 minutos.</p>
           <GetStartedButton />
         </Card>
       </Wraper>

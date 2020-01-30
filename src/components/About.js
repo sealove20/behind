@@ -20,6 +20,16 @@ const Container = styled.section`
     color: ${props => props.theme.primaryFontColor};
   }
 
+  @media only screen and (max-width: 1200px) {
+    padding: 45px 0;
+    height: auto;
+    align-items: center;
+
+    h2 {
+      margin-left: 0;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     padding: 45px 0;
     height: auto;
@@ -35,6 +45,14 @@ const Wraper = styled.div`
   align-items: center;
   margin-left: 22%;
 
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-left: 0%;
+  }
+
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
@@ -46,24 +64,24 @@ const Wraper = styled.div`
 function About() {
   return (
     <Container>
-      <h2>Como a Juno funciona?</h2>
+      <h2>Como a Behind funciona?</h2>
       <Wraper>
         <Panel
           title={"1."}
           text={
-            "Você se cadastra na Juno, emite cobranças e envia para seus clientes. É rápido e não precisa ter carteira de cobrança em nenhum banco."
+            "Você se cadastra na Behind, e faz uma conexão neural com o seu sapato. É rápido e não precisa de nada além do seu celular."
           }
         />
         <Panel
           title={"2."}
           text={
-            " Seu cliente recebe a cobrança da maneira que você preferir e paga. A Juno cuida da conciliação bancária e da segurança das suas transações."
+            "O seu sapato recebe as ondas cerebrais e instantaneamente faz uma conexão neural. Essa conexão só pode ser quebrada por um poderoso jutsu."
           }
         />
         <Panel
           title={"3."}
           text={
-            " O dinheiro cai na sua conta Juno e você pode usá-lo com seu cartão Juno, pagar contas ou transferir para uma conta bancária."
+            "Todo caminho tomado pelo seu sapato será monitorado pelo app da Behind. Monitoramos até mesmo em outras galáxias. Don't Panic!"
           }
         />
       </Wraper>

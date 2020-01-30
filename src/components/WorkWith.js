@@ -11,13 +11,21 @@ const Container = styled.section`
   padding: 50px 0;
   background: ${props => props.theme.background};
 
+  @media only screen and (max-width: 1200px) {
+    img {
+      width: 50%;
+      height: 100%;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     height: auto;
     margin-bottom: 40px;
 
     img {
-      width: 80%;
+      width: 70%;
+      height: 100%;
       order: 1;
     }
   }
@@ -64,10 +72,10 @@ function WorkWith() {
   return (
     <Container>
       <Wraper>
-        <h2>Emita cobranças recorrentes</h2>
+        <h2>Pareie com vários sapatos</h2>
         <p>
-          Com a Juno, você pode emitir cobranças recorrentes com lembretes que
-          ajudam a diminuir a inadimplência dos seus clientes.
+          Com a Behind, você pode emitir ondas cerebrais para diversos sapatos
+          ao mesmo tempo em real time.
         </p>
       </Wraper>
 
