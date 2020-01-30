@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 import cobrancas from "../images/cobrancas-recorrentes.png"
 
@@ -36,6 +36,7 @@ const Wraper = styled.div`
   margin-left: 13%;
 
   h2 {
+    transition: background 0.5s ease;
     font-weight: bold;
     font-size: 32px;
     word-wrap: break-word;

@@ -1,7 +1,17 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 import Panel from "./Panel"
+
+const fadein = keyframes`
+  from {
+    opacity: 0%
+  }
+
+  to {
+    opacity: 100%;
+  }
+`
 
 const Container = styled.section`
   display: flex;
@@ -41,6 +51,7 @@ const Container = styled.section`
 `
 
 const Wraper = styled.div`
+  animation: ${fadein} 1s ease-in;
   display: flex;
   align-items: center;
   margin-left: 22%;

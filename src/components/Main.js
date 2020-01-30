@@ -1,9 +1,33 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 import backgroundImage from "../images/banner-bg.png"
 
 import GetStartedButton from "./GetStartedButton"
+
+const slidein = keyframes`
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 537px;
+  }
+`
+
+const slideinMobile = keyframes`
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 311px;
+  }
+`
 
 const Container = styled.main`
   display: flex;
@@ -22,6 +46,7 @@ const Card = styled.div`
   margin-left: 22%;
 
   h1 {
+    animation: ${slidein} 2s alternate;
     font-size: 44px;
     line-height: 48px;
     word-wrap: break-word;
@@ -42,6 +67,7 @@ const Card = styled.div`
     margin-left: 15px;
 
     h1 {
+      animation: ${slideinMobile} 2s alternate;
       width: 311px;
       font-size: 40px;
       line-height: 40px;
