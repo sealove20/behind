@@ -28,7 +28,7 @@ const Title = styled.p`
   font-weight: 900;
   font-size: 24px;
   margin-right: 10px;
-  color: #34a73f;
+  color: ${props => props.theme.secondary};
 `
 
 const Text = styled.p`
