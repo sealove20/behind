@@ -34,10 +34,7 @@ const Container = styled.main`
   align-items: center;
   background-image: url(${backgroundImage});
   height: 537px;
-
-  @media only screen and (max-width: 600px) {
-    background-position: 70%;
-  }
+  background-position: 70%;
 `
 
 const Card = styled.div`
